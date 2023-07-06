@@ -1,0 +1,124 @@
+/* --------- header setting --------- */
+header {
+    background: linear-gradient(to right, #4E4997, #744AA0);
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-header {
+    display: flex;
+    gap: 10px;
+}
+
+.container .navigation-header ul {
+    height: 40px;
+}
+
+.container .navigation-header ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.container .navigation-header a {
+    text-decoration: none;
+    color: #ffffff85;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.15s ease-in-out;
+}
+
+.container .navigation-header a:hover {
+    color: white;
+}
+
+.container .navigation-header {
+    display: flex;
+    gap: 10px;
+}
+
+/* right block */
+.search {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sign-up {
+    background-color: #4d1f7b;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+.menu-right a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.menu-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 145px;
+    padding: 5px;
+    color: #fff;
+    font-size: 13px !important;
+    transition: 0.5s;
+}
+
+.search input:focus {
+    width: 200px;
+}
+
+.search input::placeholder {
+    color: #fff;
+}
+
+.banner {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner i {
+    font-size: 80px;
+    color: #ffffff85;
+}
+
+.banner h1 {
+    font-size: 35px;
+    font-weight: 400;
+    margin: 20px;
+}
+
+.banner h5 {
+    color: #ffffff85;
+    font-weight: 400;
+}
+
+
+
+/* --------- main setting --------- */
+
+
+/* --------- foother setting --------- */
