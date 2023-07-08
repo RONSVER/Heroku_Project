@@ -5,6 +5,12 @@ header {
     padding: 20px;
 }
 
+.icon-heroku img {
+    height: 50px;
+    width: 70px;
+    padding-right: 20px;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -44,6 +50,7 @@ header {
 }
 
 /* right block */
+
 .search {
     padding: 5px 10px;
     border-radius: 5px;
@@ -53,11 +60,17 @@ header {
     align-items: center;
 }
 
+
 .sign-up {
-    background-color: #4d1f7b;
+    background-color: #573d82;
     border-radius: 5px;
-    padding: 5px;
+    padding: 9px;
+    transition: 0.2s;
     
+}
+
+.sign-up:hover {
+    background-color:#4d3672;
 }
 
 .menu-right a {
@@ -65,6 +78,19 @@ header {
     color: #fff;
     font-weight: 600;
     font-size: 13px;
+}
+
+.menu-right span {
+    color: #ffffff48;
+}
+
+.menu-right .log-in {
+    color: #ffffff7e;
+    transition: 0.2s;
+}
+
+.menu-right .log-in:hover {
+    color: #ffffff;
 }
 
 .menu-right {
@@ -86,11 +112,22 @@ header {
 
 .search input:focus {
     width: 200px;
+    background-color: #fff;
+    color: white;
+}
+
+
+
+.search input:focus::placeholder {
+    color: rgb(0, 0, 0);
+    width: 145px !important;
 }
 
 .search input::placeholder {
-    color: #fff;
+    color: white;
 }
+
+/* === banner === */
 
 .banner {
     height: 300px;
@@ -114,11 +151,39 @@ header {
 .banner h5 {
     color: #ffffff85;
     font-weight: 400;
+    
 }
 
 
 
 /* --------- main setting --------- */
+.main-container-cards {
+    padding-top: 45px;
+    display: block;
+}
 
+.wrapper {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
+.category-label {
+    display: inline-block;
+    border-bottom: solid 1px #D8DDE6;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-left: 30px
+    
+}
+
+.category-label h5 {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-bottom: 0;
+}
 /* --------- foother setting --------- */
