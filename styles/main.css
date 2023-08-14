@@ -227,36 +227,144 @@ header {
   display: flex;
 }
 
-.custom-select {
-  border: 1px solid #ccc;
+#mySelect {
+  width: 250px;
+  height: 35px;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  transition: box-shadow 0.3s;
+
+  /* ===Спросить!=== */
+
+  -webkit-appearance: none; /* Safari и Chrome */
+  -moz-appearance: none; /* Firefox */
+  appearance: none; /*Остальные браузеры */
+
+  background: url("/assets/58942.png") no-repeat right 10px center; /* Путь к изображению и позиционирование */
+  background-size: 10px;
+  padding-right: 20px;
+}
+
+#mySelect option {
+  text-align: left;
+  padding: 5px 20px;
+}
+
+#mySelect:focus {
+  outline: none; /* Убираем стандартную рамку фокуса */
+  box-shadow: 0 0 5px rgb(128, 128, 128); /* Добавляем тень при активации */
+}
+
+/* -----CARDS----- */
+
+.down-cards-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card-dowm {
+  border: 1px solid #d8dde6;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.brand {
+  padding: 20px;
+  /* padding: 40px 80px; */
+}
+
+.brand-author {
   display: inline-block;
-  position: relative;
+  font-size: 13px;
+  margin-bottom: 10px;
+  min-height: 24px;
 }
 
-.selected-item {
-  padding: 9px 50px;
-  margin-right: 130px;
-  max-width: 400px;
-  padding-left: 10px;
+.brand-author img {
+  max-height: 24px;
+  width: 24px;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
-.option {
-  padding: 8px;
+.brand-author h6 {
+  margin: 10px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.selected-item {
+.div-cards-line {
+  height: 1px;
+  margin: 20px 0;
+  background: linear-gradient(to left, #64438b, #c6ace5);
 }
 
-.options {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  display: none;
-  border: 1px solid #ccc;
+.brand p {
+  font-size: 12px;
+  color: #4c4c4c;
+  margin-bottom: 0;
 }
 
-.options.show {
-  display: block;
+.div-stats {
+  padding: 15px 10px;
+  margin-top: 90px;
+  background: rgba(242, 242, 245, 0.5);
+  width: 100%;
+}
+
+.div-stats ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.li-cards {
+  display: inline-block;
+  margin-right: 10px;
+  color: #3f3f44;
+  font-size: 12px;
+  vertical-align: middle;
+  line-height: 12px;
+}
+
+.stats-icon > i {
+  font-size: 12px;
+  color: #000000;
+  margin-right: 4px;
+}
+
+.stats-icon .fa-star {
+  font-size: 11px;
+  margin-right: 4px;
+  color: #000000;
+}
+
+.stats-icon .la-code-branch {
+  font-size: 14px;
+  color: #000000;
+  margin-right: 4px;
+}
+
+.space-div {
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-right: 0;
+  color: #79589f;
+  text-align: right;
+  margin-left: 117px;
+}
+.space-div > i {
+  margin: 0;
+  font-size: 14px;
 }
 
 /* --------- foother setting --------- */
