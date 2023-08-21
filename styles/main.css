@@ -258,10 +258,17 @@ header {
 
 /* -----CARDS----- */
 
+.wrapper-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .down-cards-main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  max-width: 1300px;
 }
 
 .card-dowm {
@@ -365,6 +372,82 @@ header {
 .space-div > i {
   margin: 0;
   font-size: 14px;
+}
+
+/* ----down main---- */
+
+.select-cards-box {
+  position: relative;
+  border-top: solid 1px #d8dde6;
+  display: flex;
+  justify-content: space-between; /* Распределение между элементами */
+  align-items: center; /* Выравнивание по вертикали */
+  text-align: center;
+  margin-top: 60px;
+}
+
+.span-text-down-main {
+  margin-bottom: 60px;
+  font-size: 13px;
+  margin-top: 40px;
+}
+
+.first-buttons {
+  padding: 8px 16px;
+  font-size: 12px;
+  color: #cfd7e6;
+  background-color: #f9f9fb;
+  box-shadow: inset 0 0 0 1px #cfd7e6;
+  opacity: 1;
+  cursor: not-allowed;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 5px 2px;
+  border: none;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  background: #fff;
+  position: relative;
+  gap: 10px;
+}
+.box-down-main-one {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 480px;
+}
+
+/* Стили для кнопок во втором блоке */
+.box-down-main-two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 480px;
+}
+
+.last-buttons {
+  padding: 8px 16px;
+  font-size: 12px;
+  color: #79589f;
+  background: none;
+  box-shadow: inset 0 0 0 1px rgba(121, 88, 159, 0.6);
+  transition: background 0.1s linear;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 5px 2px;
+  border: none;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.last-buttons:hover {
+  background-color: rgba(169, 169, 169, 0.212);
 }
 
 /* --------- foother setting --------- */
